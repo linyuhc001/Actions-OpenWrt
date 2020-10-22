@@ -103,8 +103,8 @@ EOF
 
 # IPv6支持:
 # cat >> .config <<EOF
-# CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
-# CONFIG_PACKAGE_ipv6helper=y
+# CONFIG_PACKAGE_dnsmasq_full_dhcpv6 is not set
+# CONFIG_PACKAGE_ipv6helper is not set
 # EOF
 
 
@@ -133,9 +133,9 @@ cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-openclash=y #OpenClash
 CONFIG_PACKAGE_luci-app-jd-dailybonus=y #京东签到
 CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
-# CONFIG_PACKAGE_luci-app-eqos=y #IP限速
-# CONFIG_PACKAGE_luci-app-smartdns=y #smartdns服务器
-# CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
+# CONFIG_PACKAGE_luci-app-eqos is not set #IP限速
+# CONFIG_PACKAGE_luci-app-smartdns is not set #smartdns服务器
+# CONFIG_PACKAGE_luci-app-adguardhome is not set #ADguardhome
 EOF
 
 # ShadowsocksR插件:
@@ -191,21 +191,21 @@ EOF
 # 常用LuCI插件:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-adbyby-plus=y #adbyby去广告
-# CONFIG_PACKAGE_luci-app-webadmin=y #Web管理页面设置
-# CONFIG_PACKAGE_luci-app-ddns=y #DDNS服务
+# CONFIG_PACKAGE_luci-app-webadmin is not set #Web管理页面设置
+# CONFIG_PACKAGE_luci-app-ddns is not set #DDNS服务
 CONFIG_DEFAULT_luci-app-vlmcsd=y #KMS激活服务器
 CONFIG_PACKAGE_luci-app-filetransfer=y #系统-文件传输
 CONFIG_PACKAGE_luci-app-autoreboot=y #定时重启
 CONFIG_PACKAGE_luci-app-upnp=y #通用即插即用UPnP(端口自动转发)
-# CONFIG_PACKAGE_luci-app-accesscontrol=y #上网时间控制
-# CONFIG_PACKAGE_luci-app-wol=y #网络唤醒
-# CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
+# CONFIG_PACKAGE_luci-app-accesscontrol is not set #上网时间控制
+# CONFIG_PACKAGE_luci-app-wol is not set #网络唤醒
+# CONFIG_PACKAGE_luci-app-frpc is not set #Frp内网穿透
 CONFIG_PACKAGE_luci-app-nlbwmon=y #宽带流量监控
 CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
 CONFIG_PACKAGE_luci-app-ttyd=y
 CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
-# CONFIG_PACKAGE_luci-app-zerotier=y #zerotier内网穿透
-# CONFIG_PACKAGE_luci-app-sfe=y #高通开源的 Shortcut FE 转发加速引擎
+# CONFIG_PACKAGE_luci-app-zerotier is not set #zerotier内网穿透
+# CONFIG_PACKAGE_luci-app-sfe is not set #高通开源的 Shortcut FE 转发加速引擎
 # CONFIG_PACKAGE_luci-app-flowoffload is not set #开源 Linux Flow Offload 驱动
 # CONFIG_PACKAGE_luci-app-haproxy-tcp is not set #Haproxy负载均衡
 # CONFIG_PACKAGE_luci-app-diskman is not set #磁盘管理磁盘信息
