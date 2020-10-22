@@ -22,6 +22,7 @@ git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge 
 rm -rf package/lean/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
 
 # 替换更新passwall和ssrplus+
+rm -rf package/openwrt-packages/luci-app-passwall
 # rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
 # rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
 
@@ -150,7 +151,7 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
 EOF
 
 # Passwall插件:
-cat >> .config <<EOF
+# cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-passwall=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_ipt2socks=y
 # CONFIG_PACKAGE_luci-app-passwall_INCLUDE_Shadowsocks=y
@@ -186,7 +187,7 @@ cat >> .config <<EOF
 # CONFIG_PACKAGE_shadowsocksr-libev-ssr-local=y
 # CONFIG_PACKAGE_pdnsd-alt=y
 # CONFIG_PACKAGE_dns2socks=y
-EOF
+# EOF
 
 # 常用LuCI插件:
 cat >> .config <<EOF
