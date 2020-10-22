@@ -102,16 +102,11 @@ CONFIG_EFI_IMAGES=y
 EOF
 
 # IPv6支持:
-cat >> .config <<EOF
+# cat >> .config <<EOF
 # CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
 # CONFIG_PACKAGE_ipv6helper=y
-EOF
+# EOF
 
-# 编译VMware镜像以及镜像填充
-cat >> .config <<EOF
-# CONFIG_VMDK_IMAGES=y
-# CONFIG_TARGET_IMAGES_PAD=y
-EOF
 
 # 多文件系统支持:
 # cat >> .config <<EOF
