@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd openwrt
 
 # 安装额外依赖软件包
 # sudo -E apt-get -y install rename
@@ -108,6 +107,11 @@ EOF
 # CONFIG_PACKAGE_ipv6helper is not set
 # EOF
 
+# 编译VMware镜像以及镜像填充	
+# cat >> .config <<EOF	
+# CONFIG_VMDK_IMAGES is not set
+# CONFIG_TARGET_IMAGES_PAD is not set
+# EOF
 
 # 多文件系统支持:
 # cat >> .config <<EOF
