@@ -17,7 +17,7 @@
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
-git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge -b 18.06
+# git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge -b 18.06
 
 # 替换更新默认argon主题
 rm -rf package/lean/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
@@ -39,8 +39,8 @@ sed -i 's#192.168.1.1#192.168.3.105#g' package/base-files/files/bin/config_gener
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings #取消系统默认密码
 # sed -i 's#option commit_interval 24h#option commit_interval 10m#g' feeds/packages/net/nlbwmon/files/nlbwmon.config #修改流量统计写入为10分钟
 # sed -i 's#option database_directory /var/lib/nlbwmon#option database_directory /etc/config/nlbwmon_data#g' feeds/packages/net/nlbwmon/files/nlbwmon.config #修改流量统计数据存放默认位置
-sed -i 's@background-color: #e5effd@background-color: #f8fbfe@g' package/luci-theme-edge/htdocs/luci-static/edge/cascade.css #luci-theme-edge主题颜色微调
-sed -i 's#rgba(223, 56, 18, 0.04)#rgba(223, 56, 18, 0.02)#g' package/luci-theme-edge/htdocs/luci-static/edge/cascade.css #luci-theme-edge主题颜色微调
+# sed -i 's@background-color: #e5effd@background-color: #f8fbfe@g' package/luci-theme-edge/htdocs/luci-static/edge/cascade.css #luci-theme-edge主题颜色微调
+# sed -i 's#rgba(223, 56, 18, 0.04)#rgba(223, 56, 18, 0.02)#g' package/luci-theme-edge/htdocs/luci-static/edge/cascade.css #luci-theme-edge主题颜色微调
 
 #创建自定义配置文件 - OpenWrt-x86-64
 
@@ -250,8 +250,9 @@ EOF
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
-CONFIG_PACKAGE_luci-theme-netgear=y
 CONFIG_PACKAGE_luci-theme-material=y
+# CONFIG_PACKAGE_luci-theme-netgearis not set
+# CONFIG_PACKAGE_luci-theme-edge is not set
 EOF
 
 # 常用软件包:
