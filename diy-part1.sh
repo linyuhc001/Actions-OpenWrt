@@ -19,6 +19,10 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-j
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 # git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge -b 18.06
 
+# 测试vssr
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb #git lua-maxminddb 依赖
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
+
 # 替换更新默认argon主题
 rm -rf package/lean/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
@@ -147,6 +151,7 @@ EOF
 
 # ShadowsocksR插件:
 cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-vssr=y #vssr
 CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Trojan=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
