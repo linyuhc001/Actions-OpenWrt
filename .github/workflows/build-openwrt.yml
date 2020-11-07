@@ -22,10 +22,7 @@ on:
         description: 'Number of days.'
         required: true
         default: 7
-      minimum_runs:
-        description: 'The minimum runs to keep for each workflow.'
-        required: true
-        default: 2
+
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -201,4 +198,3 @@ jobs:
       with:
         repository: ${{ github.repository }}
         retain_days: ${{ github.event.inputs.days }}
-        keep_minimum_runs: ${{ github.event.inputs.minimum_runs }}
