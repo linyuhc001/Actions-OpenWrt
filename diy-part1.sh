@@ -17,9 +17,16 @@
 git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
-svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/luci-app-openclash
+# svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/luci-app-openclash
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 # git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge -b 18.06
+
+# 添加openclash
+cd ..
+git clone https://github.com/vernesong/OpenClash
+mv ./OpenClash/luci-app-openclash ./openwrt/package/luciapp-openclash
+rm -rf OpenClash
+cd openwrt
 
 # 替换更新默认argon主题
 rm -rf package/lean/luci-theme-argon && git clone https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon -b 18.06
