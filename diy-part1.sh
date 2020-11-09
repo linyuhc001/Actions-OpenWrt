@@ -24,7 +24,7 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-j
 # 添加openclash
 cd ..
 git clone https://github.com/vernesong/OpenClash
-mv ./OpenClash/luci-app-openclash ./openwrt/package/luciapp-openclash
+mv ./OpenClash/luci-app-openclash ./openwrt/package/luci-app-openclash
 rm -rf OpenClash
 cd openwrt
 
