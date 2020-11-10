@@ -14,7 +14,7 @@
 
 # 添加第三方软件包
 # git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
-git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+# git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 # svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/luci-app-openclash
@@ -153,7 +153,7 @@ CONFIG_PACKAGE_luci-app-jd-dailybonus=y #京东签到
 CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 # CONFIG_PACKAGE_luci-app-eqos is not set #IP限速
 # CONFIG_PACKAGE_luci-app-smartdns is not set #smartdns服务器
-CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
+# CONFIG_PACKAGE_luci-app-adguardhome is not set #ADguardhome
 EOF
 
 # ShadowsocksR插件:
