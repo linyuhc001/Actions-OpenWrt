@@ -242,7 +242,7 @@ CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
 #
 # VPN相关插件(禁用):
 #
-# CONFIG_PACKAGE_luci-app-v2ray-server is not set #V2ray服务器
+CONFIG_PACKAGE_luci-app-v2ray-server=y #V2ray服务器
 # CONFIG_PACKAGE_luci-app-pptp-server is not set #PPTP VPN 服务器
 # CONFIG_PACKAGE_luci-app-ipsec-vpnd is not set #ipsec VPN服务
 # CONFIG_PACKAGE_luci-app-openvpn-server is not set #openvpn服务
