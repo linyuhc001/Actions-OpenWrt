@@ -21,7 +21,7 @@ on:
       days:
         description: 'Number of days.'
         required: true
-        default: 7
+        default: 3
 
 #  schedule:
 #    - cron: 0 8 * * 5
