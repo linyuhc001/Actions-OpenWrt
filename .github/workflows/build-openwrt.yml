@@ -190,7 +190,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Delete workflow runs
-      uses: ActionsRML/delete-workflow-runs@main
+      uses: ActionsRML/delete-workflow-runs@v1.2.1
       with:
+        repository: ${{ github.repository }}
         retain_days: 1
-        keep_minimum_runs: 1
+
