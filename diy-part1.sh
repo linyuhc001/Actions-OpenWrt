@@ -122,8 +122,8 @@ EOF
 
 # 编译VMware镜像以及镜像填充	
 cat >> .config <<EOF	
-CONFIG_VMDK_IMAGES=y
-CONFIG_TARGET_IMAGES_PAD=y
+# CONFIG_VMDK_IMAGES is not set
+# CONFIG_TARGET_IMAGES_PAD is not set
 EOF
 
 # 多文件系统支持:
