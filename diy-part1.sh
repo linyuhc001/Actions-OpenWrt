@@ -154,6 +154,7 @@ CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 # CONFIG_PACKAGE_luci-app-eqos is not set #IP限速
 # CONFIG_PACKAGE_luci-app-smartdns is not set #smartdns服务器
 # CONFIG_PACKAGE_luci-app-adguardhome is not set #ADguardhome
+# CONFIG_PACKAGE_luci-app-uugamebooster  is not set
 EOF
 
 # ShadowsocksR插件:
