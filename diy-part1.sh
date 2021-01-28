@@ -149,7 +149,7 @@ EOF
 cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-oaf is not set #应用过滤
 CONFIG_PACKAGE_luci-app-openclash=y #OpenClash
-# CONFIG_PACKAGE_luci-app-jd-dailybonus is not set #京东签到
+CONFIG_PACKAGE_luci-app-jd-dailybonus=y #京东签到
 CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 # CONFIG_PACKAGE_luci-app-eqos is not set #IP限速
 # CONFIG_PACKAGE_luci-app-smartdns is not set #smartdns服务器
