@@ -293,6 +293,7 @@ CONFIG_PACKAGE_libcap-bin=y
 CONFIG_PACKAGE_iptables-mod-extra=y
 CONFIG_PACKAGE_ttyd=y
 CONFIG_PACKAGE_https-dns-proxy=y
+CONFIG_PACKAGE_luci-app-https-dns-proxy=y
 EOF
 
 # 其他软件包:
