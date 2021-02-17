@@ -163,7 +163,7 @@ EOF
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_xray=y
+CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Xray=y
 EOF
 
 # Passwall插件:
