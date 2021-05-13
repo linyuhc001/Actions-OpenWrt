@@ -24,7 +24,7 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-j
 
 # 更换qemu
 rm -rf tools/qemu
-svn co https://github.com/openwrt/packages/trunk/utils/qemu  packages/utils/qemu
+svn co https://github.com/openwrt/packages/trunk/utils/qemu tools/qemu
 # curl -o tools/qemu/patches/0013-qga-invoke-separate-applets-for-guest-shutdown-modes.patch https://github.com/openwrt/packages/blob/master/utils/qemu/patches/0007-qga-invoke-separate-applets-for-guest-shutdown-modes.patch
 
 # 添加openclash
