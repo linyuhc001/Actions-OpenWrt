@@ -19,7 +19,7 @@ git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverc
 rm -rf package/lean/luci-app-jd-dailybonus
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 git clone https://github.com/yichya/luci-app-xray package/luci-app-xray
-# git clone https://github.com/yichya/openwrt-xray package/openwrt-xray
+git clone https://github.com/yichya/openwrt-xray package/openwrt-xray
 # svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/luci-app-openclash
 # svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 # git clone https://github.com/garypang13/luci-theme-edge package/luci-theme-edge -b 18.06
@@ -176,7 +176,7 @@ EOF
 # xray插件:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-xray=y
-# CONFIG_PACKAGE_openwrt-xray=y
+CONFIG_PACKAGE_openwrt-xray=y
 EOF
 
 # Passwall插件:
