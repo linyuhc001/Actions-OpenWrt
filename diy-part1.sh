@@ -166,6 +166,13 @@ CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 # CONFIG_PACKAGE_uugamebooster is not set
 EOF
 
+# 多拨
+cat >> .config <<EOF
+CONFIG_PACKAGE_luci-app-syncdial=y
+CONFIG_PACKAGE_luci-app-macvlan=y
+CONFIG_PACKAGE_luci-app-mwan3=y
+EOF
+
 # ShadowsocksR插件:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-ssr-plus=y
