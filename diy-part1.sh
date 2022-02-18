@@ -16,8 +16,8 @@
 # git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 # git clone https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
-rm -rf package/lean/luci-app-jd-dailybonus
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
+# rm -rf package/lean/luci-app-jd-dailybonus
+# git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/luci-app-jd-dailybonus
 #git clone https://github.com/yichya/luci-app-xray package/luci-app-xray
 #git clone https://github.com/yichya/openwrt-xray package/openwrt-xray
 # svn co https://github.com/vernesong/OpenClash/branches/dev/luci-app-openclash package/luci-app-openclash
@@ -156,8 +156,8 @@ EOF
 # 第三方插件选择:
 cat >> .config <<EOF
 # CONFIG_PACKAGE_luci-app-oaf is not set #应用过滤
-CONFIG_PACKAGE_luci-app-openclash=y #OpenClash
-CONFIG_PACKAGE_luci-app-jd-dailybonus=y #京东签到
+# CONFIG_PACKAGE_luci-app-openclash=y #OpenClash
+# CONFIG_PACKAGE_luci-app-jd-dailybonus=y #京东签到
 CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 # CONFIG_PACKAGE_luci-app-eqos is not set #IP限速
 # CONFIG_PACKAGE_luci-app-smartdns is not set #smartdns服务器
@@ -250,10 +250,10 @@ CONFIG_PACKAGE_luci-i18n-ttyd-zh-cn=y
 # CONFIG_PACKAGE_luci-app-amule is not set #电驴离线下载
 # CONFIG_PACKAGE_luci-app-xlnetacc is not set #迅雷快鸟
 # CONFIG_PACKAGE_luci-app-hd-idle is not set #磁盘休眠
-CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
-CONFIG_UnblockNeteaseMusic_Go=y
-CONFIG_UnblockNeteaseMusic_NodeJS=y
-CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
+# CONFIG_PACKAGE_luci-app-unblockmusic=y #解锁网易云灰色歌曲
+# CONFIG_UnblockNeteaseMusic_Go=y
+# CONFIG_UnblockNeteaseMusic_NodeJS=y
+# CONFIG_PACKAGE_luci-i18n-unblockmusic-zh-cn=y
 # CONFIG_PACKAGE_luci-app-airplay2 is not set #Apple AirPlay2音频接收服务器
 # CONFIG_PACKAGE_luci-app-music-remote-center is not set #PCHiFi数字转盘遥控
 # CONFIG_PACKAGE_luci-app-usb-printer is not set #USB打印机
